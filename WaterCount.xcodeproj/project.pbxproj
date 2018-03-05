@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12BF930C204D88CC00D5E84D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BF930B204D88CC00D5E84D /* main.swift */; };
+		12BF9319204D891200D5E84D /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BF9318204D891200D5E84D /* UnitTests.swift */; };
+		12BF931E204D892100D5E84D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BF930B204D88CC00D5E84D /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		12BF9308204D88CC00D5E84D /* WaterCount */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WaterCount; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BF930B204D88CC00D5E84D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		12BF9316204D891200D5E84D /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BF9318204D891200D5E84D /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		12BF931A204D891200D5E84D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		12BF9305204D88CC00D5E84D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BF9313204D891200D5E84D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				12BF930A204D88CC00D5E84D /* WaterCount */,
+				12BF9317204D891200D5E84D /* UnitTests */,
 				12BF9309204D88CC00D5E84D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				12BF9308204D88CC00D5E84D /* WaterCount */,
+				12BF9316204D891200D5E84D /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				12BF930B204D88CC00D5E84D /* main.swift */,
 			);
 			path = WaterCount;
+			sourceTree = "<group>";
+		};
+		12BF9317204D891200D5E84D /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				12BF9318204D891200D5E84D /* UnitTests.swift */,
+				12BF931A204D891200D5E84D /* Info.plist */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 12BF9308204D88CC00D5E84D /* WaterCount */;
 			productType = "com.apple.product-type.tool";
 		};
+		12BF9315204D891200D5E84D /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BF931B204D891200D5E84D /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				12BF9312204D891200D5E84D /* Sources */,
+				12BF9313204D891200D5E84D /* Frameworks */,
+				12BF9314204D891200D5E84D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 12BF9316204D891200D5E84D /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,10 @@
 				ORGANIZATIONNAME = EyreFree;
 				TargetAttributes = {
 					12BF9307204D88CC00D5E84D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					12BF9315204D891200D5E84D = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +155,20 @@
 			projectRoot = "";
 			targets = (
 				12BF9307204D88CC00D5E84D /* WaterCount */,
+				12BF9315204D891200D5E84D /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12BF9314204D891200D5E84D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12BF9304204D88CC00D5E84D /* Sources */ = {
@@ -121,6 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				12BF930C204D88CC00D5E84D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BF9312204D891200D5E84D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BF931E204D892100D5E84D /* main.swift in Sources */,
+				12BF9319204D891200D5E84D /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +315,32 @@
 			};
 			name = Release;
 		};
+		12BF931C204D891200D5E84D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.eyrefree.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		12BF931D204D891200D5E84D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.eyrefree.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +358,15 @@
 			buildConfigurations = (
 				12BF9310204D88CC00D5E84D /* Debug */,
 				12BF9311204D88CC00D5E84D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BF931B204D891200D5E84D /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BF931C204D891200D5E84D /* Debug */,
+				12BF931D204D891200D5E84D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
